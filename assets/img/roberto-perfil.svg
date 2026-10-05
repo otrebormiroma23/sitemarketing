@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 640" width="520" height="640" role="img" aria-label="Espaço para a foto profissional de Roberto Amorim Cavalcanti">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151515"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="520" height="640" fill="url(#bg)"/>
+
+  <!-- silhueta minimalista -->
+  <circle cx="260" cy="248" r="96" fill="#2b2b2b"/>
+  <path d="M96 640c0-104 72-172 164-172s164 68 164 172z" fill="#2b2b2b"/>
+
+  <!-- detalhe vermelho -->
+  <rect x="0" y="0" width="6" height="640" fill="#ff3131"/>
+  <circle cx="260" cy="248" r="96" fill="none" stroke="#ff3131" stroke-width="2" opacity=".55"/>
+
+  <!-- moldura -->
+  <rect x="24" y="24" width="472" height="592" fill="none" stroke="#3a3a3a" stroke-width="1"/>
+
+  <!-- rótulo -->
+  <text x="48" y="66" font-family="Helvetica, Arial, sans-serif" font-size="15" letter-spacing="5" fill="#ff3131" font-weight="bold">SUA FOTO AQUI</text>
+  <text x="48" y="96" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="1.5" fill="#8a8a8a">Substitua por roberto-perfil.webp</text>
+</svg>
