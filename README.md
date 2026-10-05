@@ -14,7 +14,7 @@ Site Marketing/
 ├── js/projects.js      ← detalhes dos projetos (desafio / solução / resultados)
 ├── js/main.js          ← interações + eventos do Google Tag Manager
 ├── assets/img/
-│   ├── roberto-perfil.svg   ← PLACEHOLDER da sua foto (substituir)
+│   ├── roberto-perfil.webp   ← sua foto profissional no Hero
 │   ├── projeto-1..6.webp    ← capas do portfólio (substituir pelas reais)
 │   └── og-capa.webp         ← imagem de compartilhamento (1200×630)
 ├── robots.txt
@@ -39,7 +39,7 @@ powershell -ExecutionPolicy Bypass -File "_build\server.ps1"
 |---|---|---|
 | 1 | `index.html` → `<head>` | **`GTM-XXXXXXX`** (2 ocorrências: script e `<noscript>`) pelo seu ID do Google Tag Manager |
 | 2 | `index.html` → `<head>` | `https://seusite.com.br` no **canonical**, Open Graph, JSON-LD e `og:image` |
-| 3 | `index.html` → Hero | `assets/img/roberto-perfil.svg` → sua **foto profissional** em WebP/JPG |
+| 3 | `index.html` → Hero | `assets/img/roberto-perfil.webp` — já está com a sua foto (1000×1333) |
 | 4 | `index.html` → Seção Portfólio | Títulos, descrições, categorias (`data-categories`) e imagens dos **6 projetos** |
 | 5 | `js/projects.js` | Desafio, solução e **métricas** de cada projeto (usar o mesmo `id` do card) |
 | 6 | `index.html` → Contato | **WhatsApp** (`https://wa.me/55SEUNUMERO...`), **e-mail**, **LinkedIn** e **Instagram** |
