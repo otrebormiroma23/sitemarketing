@@ -16,7 +16,8 @@ Site Marketing/
 ├── assets/img/
 │   ├── roberto-perfil.webp   ← sua foto profissional no Hero (usada pelo site)
 │   ├── roberto-perfil.jpeg   ← original em alta (fonte, não é carregada pela página)
-│   ├── projeto-1..6.webp    ← capas do portfólio (substituir pelas reais)
+│   ├── projeto-1.webp       ← capa real (gerada do projeto-1.jpg, fonte local)
+│   ├── projeto-2..6.webp    ← capas de exemplo (substituir pelas reais)
 │   └── og-capa.webp         ← imagem de compartilhamento (1200×630)
 ├── robots.txt
 ├── sitemap.xml
@@ -46,7 +47,7 @@ powershell -ExecutionPolicy Bypass -File "_build\server.ps1"
 | 6 | `index.html` → Contato | **WhatsApp** (`https://wa.me/55SEUNUMERO...`), **e-mail**, **LinkedIn** e **Instagram** |
 | 7 | `index.html` → JSON-LD | `sameAs` com o link real do LinkedIn |
 | 8 | `robots.txt` / `sitemap.xml` | Domínio definitivo |
-| 9 | `assets/img/` | Substituir as capas de exemplo por **fotos reais dos projetos** (WebP, 1600×1000, qualidade ~82) |
+| 9 | `assets/img/` | Trocar as capas de exemplo **2 a 6** por fotos reais dos projetos (fonte JPG/PNG + WebP ~800 px, qualidade 80–85). O `projeto-1` já está com foto real |
 
 ---
 
@@ -120,14 +121,17 @@ vai para servidor**. Escolha um destino:
 
 ## 🖼️ Imagens
 
-* Capas do portfólio: **WebP 800×500** exibidas em `grayscale(100%)` e revelando a **cor original no hover**
-  (`css/styles.css` → `.card__media img`).
+* Capas do portfólio: **WebP ~800 px de largura** (o `projeto-1` é quadrado 800×800; os exemplos são
+  800×500) exibidas em `grayscale(100%)` e revelando a **cor original no hover**
+  (`css/styles.css` → `.card__media img`). O `object-fit: cover` normaliza qualquer proporção.
 * Todas as `<img>` do portfólio usam `loading="lazy"` + `decoding="async"` + `width`/`height`
   (sem *layout shift*).
 * `og-capa.webp` (1200×630) alimenta o compartilhamento em WhatsApp/LinkedIn/Instagram.
 * **Para gerar novas capas de exemplo:** abra `_build/covers.html`, ajuste os blocos `.cover` e
   capture com o DevTools (*Cmd/Ctrl+Shift+P → "Capture node screenshot"*).
-* Substituindo por fotos suas: exporte em **WebP, 1600×1000, qualidade 80–85, < 150 KB**.
+* **Como eu gero esses WebP (reproduzir):** carrego a foto num canvas de **800 px de largura** e exporto
+  com `canvas.toDataURL('image/webp', 0.84)` — qualidade 80–85, **< 150 KB**. O original (JPG/PNG) fica
+  na pasta `assets/img/` apenas como fonte, sem ser carregado pela página.
 
 ---
 

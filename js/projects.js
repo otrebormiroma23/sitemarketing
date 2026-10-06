@@ -8,7 +8,7 @@ window.PROJECTS = {
     titulo: "Resort Camboinhas — Aquisição de Hóspedes",
     categoria: "Tráfego Pago · Meta Ads",
     imagem: "assets/img/projeto-1.webp",
-    alt: "Criativos de aquisição de hóspedes da campanha de tráfego pago do Resort Camboinhas",
+    alt: "Fachada do Santa Bárbara Resort Residence, projeto de campanha de tráfego pago para reservas diretas",
     desafio:
       "O resort dependia fortemente de plataformas terceiras (OTA) e pagava comissões altas por reserva. O desafio era gerar reservas diretas com custo por reserva abaixo da comissão paga aos intermediários, sem diluir a percepção de valor da marca.",
     solucao:
